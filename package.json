@@ -5,7 +5,14 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "npm-run-all css-lint css-compile css-prefix css-minify",
+    "css-lint": "sass-lint --config .scss-lint.yml scss/*.scss",
+    "css-compile": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-theme.scss dist/css/bootstrap-theme.css",
+    "css-prefix": "postcss --config build/postcss.config.js --replace dist/css/*.css",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-theme.min.css dist/css/bootstrap-theme.css",
+    "dist": "npm-run-all --parallel css",
+    "watch": "npm-run-all --parallel watch-css",
+    "watch-css": "nodemon --ignore js/ --ignore dist/ -e scss -x \"npm run css\""
   },
   "repository": {
     "type": "git",
@@ -23,13 +30,14 @@
     "bootstrap": "^4.0.0-beta",
     "clean-css-cli": "^4.1.6",
     "node-sass": "^4.5.3",
+    "node-sass-package-importer": "^5.0.0-alpha.5",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.0",
     "sass-lint": "^1.11.1"
   },
-  "sass": "scss/bootstrap.scss",
-  "style": "dist/css/bootstrap.css",
+  "sass": "scss/bootstrap-theme.scss",
+  "style": "dist/css/bootstrap-theme.css",
   "engines": {
     "node": ">=8"
   }
