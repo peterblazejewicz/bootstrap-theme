@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-theme",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 custom theme",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterblazejewicz/bootstrap-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterblazejewicz/bootstrap-theme/issues"
+  },
+  "homepage": "https://github.com/peterblazejewicz/bootstrap-theme#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta"
+  },
+  "sass": "scss/bootstrap.scss",
+  "style": "dist/css/bootstrap.css",
+  "engines": {
+    "node": ">=8"
+  }
+}
