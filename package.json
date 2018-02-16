@@ -26,19 +26,19 @@
   },
   "homepage": "https://github.com/peterblazejewicz/bootstrap-theme#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.3",
-    "bootstrap": "^4.0.0-beta",
-    "clean-css-cli": "^4.1.6",
-    "node-sass": "^4.5.3",
-    "node-sass-package-importer": "^5.0.0-alpha.5",
-    "nodemon": "^1.11.0",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.0",
-    "sass-lint": "^1.11.1"
+    "autoprefixer": "8.0.0",
+    "bootstrap": "4.0.0",
+    "clean-css-cli": "4.1.10",
+    "node-sass": "4.7.2",
+    "node-sass-package-importer": "5.1.0",
+    "nodemon": "1.15.0",
+    "npm-run-all": "4.1.2",
+    "postcss-cli": "5.0.0",
+    "sass-lint": "1.12.1"
   },
   "sass": "scss/bootstrap-theme.scss",
   "style": "dist/css/bootstrap-theme.css",
   "engines": {
-    "node": ">=8"
+    "node": ">=9"
   }
 }

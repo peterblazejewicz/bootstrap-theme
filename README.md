@@ -1,6 +1,6 @@
 # Bootstrap Theme setup
 
-Bootstrap 4 beta custom theme setup - if you want to create your own builds.
+Bootstrap 4 custom theme setup - if you want to create your own builds.
 
 ## Tools
 
