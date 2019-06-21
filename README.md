@@ -10,12 +10,10 @@ The same tools as in BS tool-chain required to built CSS theme with following ch
 1) `node-sass` importer added to use short notation based on NPM packages:
 
 ```scss
-...
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/print';
-...
 ```
 
 ## Usage
